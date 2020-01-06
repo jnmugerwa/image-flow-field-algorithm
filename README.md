@@ -8,3 +8,5 @@ Specifically, we:
 1. Compute the gradient field of the image
 2. Estimate the principal axes of the ellipsoid that will contain the low-dimensional projections of the gradient data.
 3. Calculate a pixel-wise angle measurement between the principal axes and the gradients. 
+
+A vector field can then be placed over the image, using the angles from step 3 to inform the angles of individual vectors.
