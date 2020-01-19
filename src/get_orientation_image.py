@@ -35,7 +35,7 @@ def get_orientation_image(image_path, smooth_sigma=3, sum_sigma=3):
 
     Returns
     -------
-    orientim : array
+    orient_image : 2-D array
         An image/array, identically-sized to the input image/array. At each
         pixel is the flow-direction of the image at that pixel.
 
@@ -76,6 +76,6 @@ def get_orientation_image(image_path, smooth_sigma=3, sum_sigma=3):
     J2star = signal.fftconvolve(J2, np.rot90(gauss_kernel, 2), mode='same')
 
     # Solving for the flow direction at each pixel.
-    orientim = np.arctan2(J1star, J2star) / 2
+    orient_image = np.arctan2(J1star, J2star) / 2
 
-    return orientim
+    return orient_image
