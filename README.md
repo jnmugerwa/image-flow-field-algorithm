@@ -10,3 +10,5 @@ Specifically, we:
 3. Calculate a pixel-wise angle measurement between the principal axes and the gradients. 
 
 A vector field can then be placed over the image, using the angles from step 3 to inform the angles of individual vectors.
+
+!["A collagen network and it's direction field"](/test/results/collagen_field_output.png)
